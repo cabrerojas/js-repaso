@@ -21,4 +21,16 @@ const obj2 = { b: 5, c: "chancho" };
 
 const obj3 = { ...obj1 };
 
-console.log(obj3);
+obj1.a = 10;
+//console.log(obj3, obj1);
+
+const obj4 = { ...obj1, ...obj2 };
+//console.log(obj4);
+
+const obj5 = {
+  ...obj1,
+  loading: true,
+  data: { prop: "lala", animal: "perro" },
+};
+
+console.log(obj5);
